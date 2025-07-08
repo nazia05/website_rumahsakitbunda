@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rumah Sakit Bunda</title>
+  <style>
+    :root {
+      --primary: #05465b;
+      --light: #cdd6dd;
+      --accent: #6a9fc5;
+      --background: #c1d7e1;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background);
+      line-height: 1.6;
+    }
+    header {
+      background-color: var(--light);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    header img {
+      height: 50px;
+    }
+    .header-center {
+      flex: 2;
+      text-align: center;
+    }
+    .header-center h1 {
+      color: var(--primary);
+      font-size: 2em;
+    }
+    .top-links a {
+      color: var(--primary);
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 0.95em;
+    }
+    .top-links a:hover {
+      text-decoration: underline;
+    }
+    nav {
+      background: var(--accent);
+      text-align: center;
+      padding: 12px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #eaf6ff;
+    }
+    .hero {
+      background: url('images/banner.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero h2 {
+      background: rgba(0,0,0,0.5);
+      color: white;
+      padding: 20px 40px;
+      font-size: 2em;
+      border-radius: 10px;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+    .section p {
+      color: #333;
+      font-size: 1.05em;
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+    .grid div {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      text-align: left;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+      transition: transform 0.3s;
+    }
+    .grid div:hover {
+      transform: translateY(-5px);
+    }
+    .grid h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    button {
+      background: var(--primary);
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #034775;
+    }
+    footer {
+      background: var(--accent);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpg" alt="Logo Rumah Sakit Bunda" style="height: 50px;">
+  <div class="header-center">
+    <h1>Rumah Sakit Bunda</h1>
+  </div>
+  <div class="top-links" style="position: absolute; right: 30px;">
+  <a href="#">Tentang Kami</a>
+  <a href="#">Kontak</a>
+  <a href="#igd" style="background: red; color: white; padding: 8px 15px; border-radius: 5px; margin-left: 20px; font-weight: bold;">🚨 Darurat</a>
+</div>
+</header>
+
+<nav>
+  <a href="#">Beranda</a>
+  <a href="#layanan">Layanan</a>
+  <a href="#jadwal">Jadwal Dokter</a>
+  <a href="#galeri">Galeri</a>
+  <a href="#formulir">Pendaftaran</a>
+  <a href="#testimoni">Testimoni</a>
+</nav>
+
+<section class="hero">
+  <h2>Melayani Anda dengan Sepenuh Hati</h2>
+</section>
+
+<section class="section" id="tentang" style="background: linear-gradient(to right, #a9cde7, #f4faff); padding: 60px 30px;">
+  <div style="max-width: 900px; margin: auto; text-align: center;">
+    <h2 style="color: var(--primary); font-size: 2em; margin-bottom: 20px;">🏥 Rumah Sakit Bunda</h2>
+
+    <p style="font-size: 1.1em; color: #333; line-height: 1.8; margin-bottom: 25px;">
+      <strong>Rumah Sakit Bunda</strong> merupakan pusat layanan kesehatan yang berkomitmen memberikan <strong>pelayanan profesional, ramah, dan terpercaya</strong>. Kami hadir untuk menjawab kebutuhan masyarakat akan layanan kesehatan yang bermutu tinggi dan manusiawi.
+    </p>
+
+    <p style="font-size: 1.1em; color: #333; line-height: 1.8; margin-bottom: 35px;">
+      Didukung oleh tenaga medis berpengalaman serta fasilitas modern, kami siap memberikan layanan mulai dari <em>pemeriksaan rutin</em> hingga penanganan kasus medis yang kompleks, dengan mengutamakan <strong>keselamatan, kenyamanan, dan kepuasan pasien</strong>.
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+      <div style="background-color: #f6f8fa; padding: 20px; border-left: 5px solid var(--primary); border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+        ✅ Pelayanan Ramah & Cepat
+      </div>
+      <div style="background-color: #ffffff; padding: 20px; border-left: 5px solid var(--primary); border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+        ✅ Dokter & Perawat Bersertifikasi
+      </div>
+      <div style="background-color: #ffffff; padding: 20px; border-left: 5px solid var(--primary); border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+        ✅ Fasilitas Modern & Lengkap
+      </div>
+      <div style="background-color: #ffffff; padding: 20px; border-left: 5px solid var(--primary); border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+        ✅ IGD 24 Jam Siap Tanggap
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="layanan">
+  <h2>Layanan Kesehatan</h2>
+  <p>Beragam layanan profesional untuk kebutuhan kesehatan Anda.</p>
+  <div class="grid">
+    <div><h3>💉 Imunisasi</h3><p>Vaksinasi lengkap anak & dewasa.</p></div>
+    <div><h3>🩺 Pemeriksaan</h3><p>Cek kesehatan rutin & skrining.</p></div>
+    <div><h3>🏥 Rawat Inap</h3><p>Kamar bersih dan pelayanan nyaman.</p></div>
+    <div><h3>🔬 Laboratorium</h3><p>Hasil akurat dan cepat.</p></div>
+    <div><h3>👨‍⚕️ Konsultasi</h3><p>Dokter umum & spesialis.</p></div>
+    <div id="igd"><h3>🚨 IGD 24 Jam</h3><p>Kesiapsiagaan sepanjang waktu.</p></div>
+  </div>
+</section>
+
+<section class="section" id="jadwal">
+  <h2>Jadwal Dokter</h2>
+  <p>Berikut adalah jadwal praktek dokter kami.</p>
+  <div class="grid">
+    <div>
+      <h3>👨‍⚕️ Dr. Andi Sp.PD</h3>
+      <p>Senin & Rabu, 09.00 - 12.00</p>
+    </div>
+    <div>
+      <h3>👩‍⚕️ Dr. Sinta Sp.OG</h3>
+      <p>Selasa & Kamis, 13.00 - 16.00</p>
+    </div>
+    <div>
+      <h3>👨‍⚕️ Dr. Budi Sp.THT</h3>
+      <p>Jumat, 10.00 - 13.00</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="galeri">
+  <h2>Galeri Kegiatan</h2>
+  <p>Dokumentasi pelayanan dan kegiatan kesehatan kami.</p>
+  <div class="grid">
+    <div>
+      <img src="gambar_1.jpg" alt="Pelayanan Gawat Darurat" width="100%">
+      <p><strong>Pelayanan Gawat Darurat</strong></p>
+    </div>
+    <div>
+      <img src="gambar_2.jpg" alt="Proses Operasi di Ruang Bedah" width="100%">
+      <p><strong>Proses Operasi di Ruang Bedah</strong></p>
+    </div>
+    <div>
+      <img src="gambar_3.jpg" alt="Pemeriksaan Kehamilan oleh Dokter" width="100%">
+      <p><strong>Pemeriksaan Kehamilan</strong></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="formulir">
+  <h2>Formulir Pendaftaran</h2>
+  <form>
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" placeholder="Nama Lengkap">
+    <label for="telepon">No. Telepon:</label>
+    <input type="text" id="telepon" placeholder="08xxxxxxx">
+    <label for="layanan">Layanan yang dipilih:</label>
+    <input type="text" id="layanan" placeholder="Contoh: Imunisasi">
+    <label for="pesan">Pesan Tambahan:</label>
+    <textarea id="pesan" rows="4" placeholder="Keluhan atau catatan lainnya..."></textarea>
+    <button type="submit">Daftar Sekarang</button>
+  </form>
+</section>
+
+<section class="section" id="testimoni">
+  <h2>Testimoni Pasien</h2>
+  <div class="grid">
+    <div>
+      <p>"Pelayanan cepat, dokter ramah. Sangat puas!"</p>
+      <strong>- Siti Aisyah</strong>
+    </div>
+    <div>
+      <p>"Fasilitas bersih dan nyaman. Rekomendasi keluarga kami."</p>
+      <strong>- Ahmad R.</strong>
+    </div>
+  </div>
+</section>
+<section class="section" id="artikel" style="background-color: #ffffff; padding: 60px 20px; border-top: 5px solid var(--accent);">
+  <div style="max-width: 900px; margin: auto; text-align: left;">
+    <h2 style="color: var(--primary); text-align: center; margin-bottom: 30px;">🩺 Artikel Kesehatan: Pentingnya Pemeriksaan Kesehatan Rutin</h2>
+
+    <p><strong>Mengapa Pemeriksaan Rutin Penting?</strong><br>
+    Pemeriksaan kesehatan secara rutin merupakan salah satu cara terbaik untuk menjaga kondisi tubuh tetap optimal dan mencegah penyakit serius di kemudian hari. Banyak penyakit kronis seperti diabetes, hipertensi, dan kanker dapat dideteksi lebih awal melalui skrining berkala.</p>
+
+    <p><strong>Manfaat Pemeriksaan Kesehatan:</strong></p>
+    <ul style="padding-left: 20px;">
+      <li>✅ Deteksi dini penyakit sebelum muncul gejala</li>
+      <li>✅ Mengetahui risiko kesehatan berdasarkan gaya hidup</li>
+      <li>✅ Meningkatkan harapan hidup dengan penanganan cepat</li>
+      <li>✅ Membangun kebiasaan hidup sehat</li>
+    </ul>
+
+    <p><strong>Kapan Harus Melakukan Pemeriksaan?</strong><br>
+    • Minimal <em>setahun sekali</em> untuk orang dewasa sehat<br>
+    • Lebih sering bagi mereka yang memiliki <em>riwayat keluarga</em> dengan penyakit kronis<br>
+    • Pemeriksaan penting meliputi: tekanan darah, kadar gula darah, kolesterol, fungsi hati & ginjal, dan pemeriksaan fisik umum</p>
+
+    <p><strong>Tips Hidup Sehat Tambahan:</strong><br>
+    • Konsumsi makanan bergizi dan kurangi makanan tinggi gula & garam<br>
+    • Lakukan olahraga minimal 30 menit, 3–5 kali seminggu<br>
+    • Cukupi tidur 7–8 jam per malam<br>
+    • Hindari rokok, alkohol, dan stres berlebih</p>
+
+    <div style="background: #e8f4fb; padding: 20px; border-left: 5px solid var(--primary); margin-top: 30px;">
+      🧑‍⚕️ <strong>Jangan ragu untuk berkonsultasi dengan dokter di Rumah Sakit Bunda</strong> untuk pemeriksaan dan panduan kesehatan terbaik sesuai kebutuhan Anda.
+    </div>
+  </div>
+</section>
+
+<div style="background: #f5f5f5; color: #333; text-align: left; padding: 40px 20px;">
+  <section style="max-width: 900px; margin: auto;">
+    <h2 style="color: var(--primary);">Kebijakan Privasi</h2>
+    <p>Kami menghargai privasi Anda. Informasi pribadi yang Anda berikan melalui formulir pendaftaran atau interaksi lainnya akan dijaga kerahasiaannya dan hanya digunakan untuk keperluan pelayanan kesehatan di Rumah Sakit Bunda.</p>
+
+    <h2 style="color: var(--primary); margin-top: 30px;">Syarat dan Ketentuan</h2>
+    <p>Dengan menggunakan layanan dan fasilitas Rumah Sakit Bunda, Anda menyetujui untuk mematuhi seluruh peraturan rumah sakit. Informasi dan jadwal dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya. Harap selalu melakukan konfirmasi terlebih dahulu melalui kontak resmi kami.</p>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2025 Rumah Sakit Bunda</p>
+  <p>Alamat: Jl. Sehat No.1, Jakarta | Email: info@rsbunda.com | Telp: 0822-1116-3469</p>
+  <p>Ikuti kami: <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+  </section>
+</div>
+
+</footer>
+
+</body>
+</html>
